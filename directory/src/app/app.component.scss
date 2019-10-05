@@ -1,0 +1,33 @@
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: grey;
+        color: white;
+        padding: 0 0.5rem;
+        height: 3.5rem;
+        h3 {
+            margin: 1rem;
+        }
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            li {
+                height: 100%;
+                list-style-type: none;
+                margin: 0 0.5rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 0.5rem;
+                transition: background-color 400ms linear;
+                &:hover{
+                    background: black;
+                }
+            }
+        }
+    }
+}

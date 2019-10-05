@@ -1,0 +1,17 @@
+<header>
+  <nav>
+    <h3>Directory</h3>
+    <ul>
+      <li><span>Wew!</span></li>
+      <li><span>Wew!</span></li>
+      <li><span>Start from tutorial 7</span></li>
+    </ul>
+  </nav>
+</header>
+<section id="main">
+  <!-- childData is passing data to child -->
+  <!-- testEvent is a custom event this component is listening to, it can be fired from anywhere in the app -->
+  <app-home 
+    [childData]="passToChild" 
+    (testEvent)="testEventFunction($event)"
+  ><p>Wew this content goes in ng-content</p></app-home></section>

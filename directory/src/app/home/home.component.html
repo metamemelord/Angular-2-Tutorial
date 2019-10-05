@@ -1,0 +1,10 @@
+<p>{{homePara}}</p>
+<ng-content></ng-content> <!-- similar to vue.js slots, you can pass HTML in tags -->
+<input type="text" [value]="homePara">
+<input type="text" value="{{homePara}}">
+<input [(ngModel)]="test.name">
+<br/>{{test.name}}
+<button (click)="alert('heheh')">Click dude!</button>
+<br/>{{childData.name}}
+
+<button (click)="fireTestEvent($event)"></button>  <!-- We fire an event on click here -->
